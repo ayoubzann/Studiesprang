@@ -1,6 +1,5 @@
 .review-card{
-    min-width: 20em;
-    max-width: 30em;
+    max-width: 65vw; 
 }
 
 .starrating{
@@ -11,3 +10,4 @@
     height: 18vw;
     max-height: 6em;
 }
+
