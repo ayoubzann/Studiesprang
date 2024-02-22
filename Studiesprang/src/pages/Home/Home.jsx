@@ -1,9 +1,10 @@
-import { Heading, Card, CardHeader, CardBody } from "@chakra-ui/react";
+import { Heading, Card, CardHeader, CardBody, Divider } from "@chakra-ui/react";
 import AiSensorImg from "../../assets/ai.png";
 import StudieteknikkImg from "../../assets/study.png";
 import { Link } from "react-router-dom";
 import "./Home.css";
 import ReviewCard from "../../components/Navbar/Reviewcard/ReviewCard";
+import { Carousel } from "flowbite-react";
 
 const Home = () => {
   return (
@@ -39,8 +40,18 @@ const Home = () => {
           </Card>
         </Link>
       </div>
-      <div className="reviews">
-        <ReviewCard/>
+
+      <Divider className="mt-10 mb-10" />
+      <Heading>
+        <h1 className="m-5">Tilbakemeldinger fra våre brukere</h1>
+      </Heading>
+      <div className="reviews flex flex-wrap gap-5">
+        <Carousel className="carousel">
+
+        <ReviewCard />
+        <ReviewCard />
+        <ReviewCard />
+        </Carousel>
       </div>
     </div>
   );
