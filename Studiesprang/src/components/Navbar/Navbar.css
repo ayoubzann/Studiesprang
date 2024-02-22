@@ -1,0 +1,25 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff; 
+    padding: 1rem; 
+    z-index: 100;
+}
+
+.nav-logo{
+    height: 12vw;
+}
+
+.nav-links{
+    display: flex;
+    gap: 5vw;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
