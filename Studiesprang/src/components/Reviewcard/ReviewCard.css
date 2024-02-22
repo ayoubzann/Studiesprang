@@ -1,0 +1,13 @@
+.review-card{
+    max-width: 65vw; 
+}
+
+.starrating{
+    height: 2em;
+}
+
+.userpic{
+    height: 18vw;
+    max-height: 6em;
+}
+
