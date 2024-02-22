@@ -5,7 +5,9 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <div className="navbar sticky">
-      <img src={TekstLogo} alt="Studiesprang Logo" className="nav-logo" />
+      <Link to="/">
+        <img src={TekstLogo} alt="Studiesprang Logo" className="nav-logo" />
+      </Link>
       <div className="nav-links">
         <Link to="/">
           <p className="text-xl">Studieteknikker</p>
