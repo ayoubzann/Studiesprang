@@ -1,11 +1,14 @@
-.linkcard{
-    transition: all .2s ease-in-out;     
+.linkcard {}
+
+.linkimg {
+    height: 10em;
 }
 
-.linkcard:hover{
-    transform: scale(1.1);
+.reviews {
+    display: flex;
+    justify-content: center;
 }
 
-.linkimg{
-   height: 10em;
+.carousel {
+    max-width: 65vw;
 }
