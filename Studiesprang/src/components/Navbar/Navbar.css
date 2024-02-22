@@ -7,10 +7,11 @@
     background-color: #ffffff; 
     padding: 1rem; 
     z-index: 100;
+    margin-bottom: 1rem;
 }
 
 .nav-logo{
-    height: 12vw;
+    max-height: 5rem;
 }
 
 .nav-links{
