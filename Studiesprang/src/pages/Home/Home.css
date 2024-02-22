@@ -1,3 +1,11 @@
+.linkcard{
+    transition: all .2s ease-in-out;     
+}
+
+.linkcard:hover{
+    transform: scale(1.1);
+}
+
 .linkimg{
    height: 10em;
 }
