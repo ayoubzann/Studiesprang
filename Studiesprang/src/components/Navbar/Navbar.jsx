@@ -9,7 +9,7 @@ const Navbar = () => {
         <img src={TekstLogo} alt="Studiesprang Logo" className="nav-logo" />
       </Link>
       <div className="nav-links">
-        <Link to="/">
+        <Link to="/studieteknikker">
           <p className="text-xl">Studieteknikker</p>
         </Link>
         <Link to="/aisensor">
