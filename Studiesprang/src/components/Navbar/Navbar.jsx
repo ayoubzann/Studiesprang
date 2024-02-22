@@ -9,10 +9,10 @@ const Navbar = () => {
         <img src={TekstLogo} alt="Studiesprang Logo" className="nav-logo" />
       </Link>
       <div className="nav-links">
-        <Link to="/studieteknikker">
+        <Link className="nav-link" to="/studieteknikker">
           <p className="text-xl">Studieteknikker</p>
         </Link>
-        <Link to="/aisensor">
+        <Link className="nav-link" to="/aisensor">
           <p className="text-xl">AI-Sensor</p>
         </Link>
       </div>
