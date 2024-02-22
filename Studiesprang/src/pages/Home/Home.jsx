@@ -3,7 +3,7 @@ import AiSensorImg from "../../assets/ai.png";
 import StudieteknikkImg from "../../assets/study.png";
 import { Link } from "react-router-dom";
 import "./Home.css";
-import ReviewCard from "../../components/Navbar/Reviewcard/ReviewCard";
+import ReviewCard from "../../components/Reviewcard/ReviewCard";
 import { Carousel } from "flowbite-react";
 
 const Home = () => {
@@ -47,7 +47,6 @@ const Home = () => {
       </Heading>
       <div className="reviews flex flex-wrap gap-5">
         <Carousel className="carousel">
-
         <ReviewCard />
         <ReviewCard />
         <ReviewCard />
