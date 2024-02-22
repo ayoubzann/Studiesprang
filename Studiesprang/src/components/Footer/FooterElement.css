@@ -1,0 +1,7 @@
+.footer {
+  flex-shrink: 0;  /* Prevents footer from shrinking when content overflows */
+  margin-top: auto;  /* Pushes the footer to the bottom of its container */
+  width: 100%;
+  padding: 1rem;  /* Adjust this as needed for spacing */
+  background-color: #fff;  /* Add your desired background color */
+}
