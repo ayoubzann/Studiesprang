@@ -5,8 +5,9 @@ import "./ReviewCard.css"
 
 const ReviewCard = () => {
   return (
-    <div className=" review-card shadow-lg">
+    <div className="review-card">
       <Card>
+        <div className=" bg-slate-200">
         <Heading><h2 className="mt-3">Lorem Ipsum</h2></Heading>
         <div className="review-photo flex items-center">
         <img src={RevPhoto} alt="Brukerbilde" className="userpic ml-4"/>
@@ -18,6 +19,7 @@ const ReviewCard = () => {
         <img className="starrating" src={StarRating} alt="5-stjernerating"/>
         <img className="starrating" src={StarRating} alt="5-stjernerating"/>
         <img className="starrating" src={StarRating} alt="5-stjernerating"/>
+        </div>
         </div>
       </Card>
     </div>
