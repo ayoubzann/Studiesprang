@@ -8,7 +8,7 @@ import Studieteknikker from "./pages/Studieteknikker";
 
 function App() {
   return (
-    <div className="flex flex-col ">
+    <div className=" reviewcard flex flex-col ">
       <BrowserRouter>
       <Navbar/>
         <Routes>
