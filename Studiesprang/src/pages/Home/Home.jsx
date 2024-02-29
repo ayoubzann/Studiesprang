@@ -7,6 +7,9 @@ import ReviewCard from "../../components/Reviewcard/ReviewCard";
 import { Carousel } from "flowbite-react";
 
 const Home = () => {
+
+
+
   return (
     <div className="p-10">
       <h1 className="text-5xl">STUDIESPRANG</h1>
@@ -23,7 +26,6 @@ const Home = () => {
             </CardBody>
             <CardHeader className="md:ml-4">
               <h2 className="text-xl font-extrabold">AI-Sensor</h2>
-              {/* Filler text */}
               <p>Some filler text here...</p>
             </CardHeader>
           </Card>
@@ -39,17 +41,15 @@ const Home = () => {
             </CardBody>
             <CardHeader className="md:ml-4">
               <h2 className="text-xl font-extrabold">Studieteknikk</h2>
-              {/* Filler text */}
               <p>Some filler text here...</p>
             </CardHeader>
           </Card>
         </Link>
       </section>
-
       <Divider className="mt-10 mb-10" />
       <section>
         <Heading>
-          <h1 className="m-5">Tilbakemeldinger fra våre brukere!!:</h1>
+          <h1 className="m-5">Tilbakemeldinger fra våre brukere</h1>
         </Heading>
         <div className="reviews flex flex-wrap gap-5">
           <Carousel className="carousel">
