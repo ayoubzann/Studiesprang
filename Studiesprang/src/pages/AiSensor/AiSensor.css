@@ -1,0 +1,26 @@
+.aisensor-header > h2{
+    width: 55vw;
+    font-weight: 600;
+}
+
+
+.floating {
+    animation: bounce 2s infinite;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+    50% {
+        transform: none;
+        animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
+}
