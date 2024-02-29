@@ -12,7 +12,12 @@ body{
 }
 
 .main-content {
-  flex: 1;  /* Allows the main content to grow to fill the available space */
-  padding: 1rem;  /* Adjust this as needed for spacing */
+  flex: 1;  
+  padding: 1rem;
   min-height: 65vh;
+}
+
+
+button{
+  padding: 200%;
 }
