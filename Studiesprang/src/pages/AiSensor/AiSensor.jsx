@@ -53,7 +53,7 @@ const AiSensor = () => {
             className="m-20"
             isIndeterminate
             size="10vw"
-            thickness="2vw"
+            thickness="8px"
           />
           <p className="text-3xl font-bold">Feedback på vei!</p>
         </div>
