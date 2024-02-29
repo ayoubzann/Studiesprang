@@ -3,7 +3,7 @@ import "./App.css";
 import Home from "./pages/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import Login from "./pages/Login";
-import AiSensor from "./pages/AiSensor";
+import AiSensor from "./pages/AiSensor/AiSensor";
 import Studieteknikker from "./pages/Studieteknikker/Studieteknikker";
 import FooterElement from "./components/Footer/FooterElement";
 
