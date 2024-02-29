@@ -49,7 +49,7 @@ const Home = () => {
       <Divider className="mt-10 mb-10" />
       <section>
         <Heading>
-          <h1 className="m-5">Tilbakemeldinger fra våre brukere</h1>
+          <h1 className="m-5">Tilbakemeldinger fra våre brukere!!:</h1>
         </Heading>
         <div className="reviews flex flex-wrap gap-5">
           <Carousel className="carousel">
