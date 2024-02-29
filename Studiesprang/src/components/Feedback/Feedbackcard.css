@@ -1,0 +1,16 @@
+.feedbackcard{
+    border-radius: 2rem;
+}
+
+.tabs{
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.accordion{
+    width: 65vw;
+    margin: auto;
+    margin-bottom: 1em;
+}
