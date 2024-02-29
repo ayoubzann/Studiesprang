@@ -1,7 +1,7 @@
 import { Card, CardBody, Heading } from "@chakra-ui/react";
 import RevPhoto from "../../assets/Rev1.png"
-import StarRating from "../../assets/favourite.png"
 import "./ReviewCard.css"
+import { Rating } from "flowbite-react";
 
 const ReviewCard = () => {
   
@@ -14,13 +14,14 @@ const ReviewCard = () => {
         <img src={RevPhoto} alt="Brukerbilde" className="userpic ml-4"/>
         <CardBody><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, vitae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, sequi.</p></CardBody>
         </div>
-        <div className="flex justify-center gap-4 mb-10 ">
-        <img className="starrating" src={StarRating} alt="5-stjernerating"/>
-        <img className="starrating" src={StarRating} alt="5-stjernerating"/>
-        <img className="starrating" src={StarRating} alt="5-stjernerating"/>
-        <img className="starrating" src={StarRating} alt="5-stjernerating"/>
-        <img className="starrating" src={StarRating} alt="5-stjernerating"/>
-        </div>
+        <Rating size="lg" className="flex justify-center">
+          <Rating.Star/>
+          <Rating.Star/>
+          <Rating.Star/>
+          <Rating.Star/>
+          <Rating.Star/>
+        </Rating>
+      
         </div>
       </Card>
     </div>

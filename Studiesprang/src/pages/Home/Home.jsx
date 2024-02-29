@@ -9,10 +9,11 @@ import { Carousel } from "flowbite-react";
 const Home = () => {
   return (
     <div className="p-10">
+      <h1 className="text-5xl">STUDIESPRANG</h1>
       <Heading className="p-5">Hva trenger du hjelp til?</Heading>
-      <div className="flex flex-wrap gap-10 justify-center">
+      <section className="flex flex-wrap gap-10 justify-center">
         <Link className="linkcard shadow-lg" to="/aisensor">
-          <Card className="p-2">
+          <Card className="p-2 flex flex-col md:flex-row">
             <CardBody>
               <img
                 className="linkimg"
@@ -20,13 +21,15 @@ const Home = () => {
                 alt="Link ikon til AI-sensorsiden"
               />
             </CardBody>
-            <CardHeader>
+            <CardHeader className="md:ml-4">
               <h2 className="text-xl font-extrabold">AI-Sensor</h2>
+              {/* Filler text */}
+              <p>Some filler text here...</p>
             </CardHeader>
           </Card>
         </Link>
         <Link className="linkcard shadow-lg" to="/studieteknikker">
-          <Card className="p-2">
+          <Card className="p-2 flex flex-col md:flex-row">
             <CardBody>
               <img
                 className="linkimg"
@@ -34,24 +37,28 @@ const Home = () => {
                 alt="Link ikon til studieteknikker-siden"
               />
             </CardBody>
-            <CardHeader>
+            <CardHeader className="md:ml-4">
               <h2 className="text-xl font-extrabold">Studieteknikk</h2>
+              {/* Filler text */}
+              <p>Some filler text here...</p>
             </CardHeader>
           </Card>
         </Link>
-      </div>
+      </section>
 
       <Divider className="mt-10 mb-10" />
-      <Heading>
-        <h1 className="m-5">Tilbakemeldinger fra våre brukere</h1>
-      </Heading>
-      <div className="reviews flex flex-wrap gap-5">
-        <Carousel className="carousel">
-        <ReviewCard />
-        <ReviewCard />
-        <ReviewCard />
-        </Carousel>
-      </div>
+      <section>
+        <Heading>
+          <h1 className="m-5">Tilbakemeldinger fra våre brukere</h1>
+        </Heading>
+        <div className="reviews flex flex-wrap gap-5">
+          <Carousel className="carousel">
+            <ReviewCard />
+            <ReviewCard />
+            <ReviewCard />
+          </Carousel>
+        </div>
+      </section>
     </div>
   );
 };

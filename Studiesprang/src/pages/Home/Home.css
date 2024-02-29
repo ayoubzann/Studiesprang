@@ -1,19 +1,42 @@
 .linkcard {
-    transition: all .2s ease-in-out;     
-}
-.linkcard:hover{
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .linkcard:hover {
     transform: scale(1.1);
-}
-
-.linkimg {
+  }
+  
+  .linkimg {
     height: 10em;
-}
-
-.reviews {
+  }
+  
+  .reviews {
     display: flex;
     justify-content: center;
-}
-
-.carousel {
+  }
+  
+  .carousel {
     max-width: 65vw;
-}
+  }
+  
+  /* Added styles for larger screens */
+  @media (min-width: 48em) {
+    .linkcard {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    transition: all 0.2s ease-in-out;
+
+    }
+  
+    .linkcard:hover {
+      transform: scale(1.1);
+
+    }
+  
+    .linkimg {
+      margin-bottom: 1em; /* Adjust spacing between image and text on larger screens */
+    }
+  }
+  
