@@ -90,6 +90,7 @@ const FeedbackCard = () => {
             </Accordion>
           </TabPanel>
           <TabPanel>
+          <h2 className="text-xl font-bold m-5">Dette kan bli bedre</h2>
           <Accordion className="accordion">
               <Accordion.Panel>
                 <Accordion.Title> ➡️ Lorem ipsum dolor sit</Accordion.Title>
@@ -160,6 +161,7 @@ const FeedbackCard = () => {
             </Accordion>
           </TabPanel>
           <TabPanel>
+          <h2 className="text-xl font-bold m-5">Dette bør forbedres</h2>
           <Accordion className="accordion">
               <Accordion.Panel>
                 <Accordion.Title> ❌ Lorem ipsum dolor sit</Accordion.Title>
