@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 import ReviewCard from "../../components/Reviewcard/ReviewCard";
 import { Carousel } from "flowbite-react";
+import AiSensor from "../AiSensor/AiSensor";
 
 const Home = () => {
 
@@ -13,6 +14,7 @@ const Home = () => {
   return (
     <div className="p-10">
       <h1 className="text-5xl">STUDIESPRANG</h1>
+      <AiSensor/>
       <Heading className="p-5">Hva trenger du hjelp til?</Heading>
       <section className="flex flex-wrap gap-10 justify-center">
         <Link className="linkcard shadow-lg" to="/aisensor">
