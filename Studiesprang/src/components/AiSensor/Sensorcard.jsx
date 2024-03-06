@@ -10,7 +10,7 @@ const Sensorcard = () => {
     <div id="aisensor">
       <SignedOut>
         <div className="sensorcard">
-        <h1 className="sensorcard-title">Registrer deg for å prøve AI-Sensoren gratis!</h1>
+        <h1 className="sensorcard-title">Registrer deg eller logg på for å prøve AI-Sensoren gratis👇</h1>
         <SignUp/>
         </div>
       </SignedOut>
