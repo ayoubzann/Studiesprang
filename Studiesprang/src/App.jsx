@@ -10,29 +10,33 @@ import React from "react";
 
 function App() {
   return (
-    <Routes className="app-container">
-      <Route
-        className="main-content flex justify-center"
-        path="/*"
-        element={
-          <React.Fragment>
-            <SignedOut>
-              <Routes>
-                <Route path="/" element={<Home />} />
-              </Routes>
-            </SignedOut>
-            <SignedIn>
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/studieteknikker" element={<Studieteknikker />} />
-                <Route path="/aisensor" element={<AiSensor />} />
-                <Route path="/login" element={<Login />} />
-              </Routes>
-            </SignedIn>
-          </React.Fragment>
-        }
-      />
-    </Routes>
+    <div className="content-container">
+      <Routes>
+        <Route
+          path="/*"
+          element={
+            <React.Fragment>
+              <SignedOut>
+                <Routes>
+                  <Route path="/" element={<Home />} />
+                </Routes>
+              </SignedOut>
+              <SignedIn>
+                <Routes>
+                  <Route path="/" element={<Home />} />
+                  <Route
+                    path="/studieteknikker"
+                    element={<Studieteknikker />}
+                  />
+                  <Route path="/aisensor" element={<AiSensor />} />
+                  <Route path="/login" element={<Login />} />
+                </Routes>
+              </SignedIn>
+            </React.Fragment>
+          }
+        />
+      </Routes>
+    </div>
   );
 }
 
