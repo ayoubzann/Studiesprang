@@ -1,4 +1,4 @@
-import { SignUp, SignedOut } from "@clerk/clerk-react";
+import { SignIn, SignedOut } from "@clerk/clerk-react";
 import { SignedIn } from "@clerk/clerk-react";
 import { Card, CardBody, CardFooter, CardHeader } from "@chakra-ui/react";
 import "./Sensorcard.css";
@@ -11,16 +11,18 @@ const Sensorcard = () => {
       <SignedOut>
         <div className="sensorcard">
         <h1 className="sensorcard-title">Registrer deg eller logg på for å prøve AI-Sensoren gratis👇</h1>
-        <SignUp/>
+        <SignIn/>
         </div>
       </SignedOut>
       <SignedIn>
         <div className="aisensor">
 
         <Card className="sensorcard">
-          <CardHeader>Header</CardHeader>
-          <CardBody>Body</CardBody>
-          <CardFooter>Footer</CardFooter>
+          <CardHeader>Lorem ipsum dolor sit amet.</CardHeader>
+          <CardBody>Dette er testinnhold.</CardBody>
+          <CardFooter>Lorem 20
+
+          </CardFooter>
         </Card>
         </div>
       </SignedIn>
