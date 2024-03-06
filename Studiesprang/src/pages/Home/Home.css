@@ -1,25 +1,30 @@
-.linkcard {
-    transition: all 0.2s ease-in-out;
+  .fadein {
+    opacity: 0;
+    transform: translateY(1em);
+    transition: opacity 2.5s, transform 2.5s;
   }
   
-  .linkcard:hover {
-    transform: scale(1.1);
+  .animation-started {
+    opacity: 1;
+    transform: translateY(0);
   }
   
-  .linkimg {
-    height: 10em;
+  @keyframes fadeInAndFly {
+    0% {
+      opacity: 0;
+      transform: translateY(-1em);
+    }
+  
+    10% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   
-  .reviews {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .carousel {
-    max-width: 65vw;
-  }
-  
-  /* Added styles for larger screens */
   @media (min-width: 48em) {
     .linkcard {
       display: flex;
@@ -36,7 +41,7 @@
     }
   
     .linkimg {
-      margin-bottom: 1em; /* Adjust spacing between image and text on larger screens */
+      margin-bottom: 1em;
     }
   }
   
