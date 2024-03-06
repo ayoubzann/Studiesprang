@@ -7,7 +7,7 @@ const Sensorcard = () => {
 
 
   return (
-    <div id="aisensor">
+    <div id="aisensor" className="aisensor">
       <SignedOut>
         <div className="sensorcard">
         <h1 className="sensorcard-title">Registrer deg eller logg på for å prøve AI-Sensoren gratis👇</h1>
