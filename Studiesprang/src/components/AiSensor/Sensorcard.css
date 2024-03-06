@@ -8,7 +8,8 @@
     line-height: 1.5em;
     max-width: 15em;
     margin-bottom: 1em;
-    font-weight: 700;
+    font-weight: 500;
+    margin: 1em;
 }
 .sensorcard{
     display: flex;
