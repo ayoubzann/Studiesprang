@@ -5,7 +5,6 @@ import "./index.css";
 import { ChakraProvider } from "@chakra-ui/react";
 import { ClerkProvider } from "@clerk/clerk-react";
 import { BrowserRouter } from "react-router-dom";
-import Navbar from './components/Navbar/Navbar';
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
@@ -18,7 +17,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
       <BrowserRouter>
         <ChakraProvider>
-          <Navbar/>
           <App />
         </ChakraProvider>
       </BrowserRouter>
