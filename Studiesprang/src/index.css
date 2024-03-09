@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
+html {
 }
 
 :root {
@@ -17,6 +17,9 @@ html{
   display: flex;
   justify-content: center;
   background-image: url("./images/wavedividersensor.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 body {
@@ -25,4 +28,5 @@ body {
   justify-content: center;
   min-width: 320px;
   max-width: 1200px;
+  background-color: red;
 }
