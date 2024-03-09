@@ -104,7 +104,7 @@ const SSlideD = ({handleRestart}) => {
                 <li>Point 6</li>
               </ul>
 
-              <h3 className="text-2xl"> Syntaks</h3>
+              <h3 className="text-2xl"> Rettskriving</h3>
               <ul className="list-disc mb-5">
                 <li>Item A</li>
                 <li>Item B</li>
