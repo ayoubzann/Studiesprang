@@ -1,5 +1,6 @@
 import React from "react";
 import { CircularProgress } from "@chakra-ui/react";
+import "./styles/SensorcardC.css"
 
 const SSlideC = ({setCurrentPage}) => {
   const handleNextPage = (event) => {
@@ -7,7 +8,7 @@ const SSlideC = ({setCurrentPage}) => {
     setCurrentPage(4);
   }
   return (
-    <div className="flex flex-col items-center">
+    <div className="loadingscreen flex flex-col items-center">
       <CircularProgress
         thickness="6px"
         size="200px"
