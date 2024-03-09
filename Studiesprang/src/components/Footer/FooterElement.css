@@ -1,4 +1,4 @@
-.footer {
+lo.footer {
   flex-shrink: 0;  /* Prevents footer from shrinking when content overflows */
   margin-top: auto;  /* Pushes the footer to the bottom of its container */
   width: 100%;

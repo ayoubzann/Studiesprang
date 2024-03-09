@@ -1,0 +1,56 @@
+.sensorcard-title{
+    font-size: 2em;
+    line-height: 1.5em;
+    max-width: 15em;
+    margin-bottom: 1em;
+    font-weight: 500;
+    margin: 1em;
+}
+
+.aisensor{
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+}
+
+.aiinput{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    min-width: 300px;
+place-items: center;
+}
+
+.aiinput textarea{
+    border-radius: 0.5em 0.5em 0 0.5em;
+    height: 150px;
+    width: 80%;
+    border: none;
+    background: rgb(235, 252, 252);
+}
+
+.formlabel{
+    font-size: 3em;
+    font-weight: 700;
+    padding: 0.2em;
+}
+
+.formdesc{
+    font-size: 1.4em;
+    padding: 1em;
+}
+
+@media (max-width: 780px)
+{
+    .formlabel{
+        font-size: 2em;
+    }
+
+    .formdesc{
+        font-size: 1em;
+        line-height: 1999;
+        font-weight: 500;
+        text-align:center;
+    }
+}

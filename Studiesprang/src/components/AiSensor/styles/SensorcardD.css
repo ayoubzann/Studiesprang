@@ -1,0 +1,78 @@
+.criteriatitle{
+    font-size: 1.8em;
+    font-weight: 700;
+    text-align: center;
+    padding: 20px 15%;
+}
+
+.aisensor-feedback{
+    width: 100%;
+    padding: 10px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.criterialist{
+height: 100%;;
+}
+
+.tablist{
+    display:contents;
+}
+.nextpage{
+    background-color: rgb(31 41 55);
+    color: white;
+    margin-top: 1.5em;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 1rem;
+    border-radius: 3em;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.tabs{
+    background-color: rgb(218, 236, 255);
+    min-width: 280px;
+    max-width: 800px;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 720px) {
+    .criteriatitle{
+        font-size: 1.3em;
+        padding: 1em 5px;
+    }
+
+    .tablist{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .tabheading{
+        width: 100%;
+    }
+    .aisensor-feedback{
+        display: flex;
+        flex-direction: column;
+        padding: 15px 20px;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .tabs{
+        width: 100%;
+        padding: 5px;
+        border-radius: 1.5em;
+    }
+}
