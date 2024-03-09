@@ -55,6 +55,7 @@ const Home = () => {
       <div className="head fadein">
         <Header />
       </div>
+      {/* <img src="./images/wavedividersensor.svg"/> */}
         <section className="content">
           <div className="aisensor-container fadein">
             {/* Ha 5 forskjellige sensorkort som lagrer staten her og gjør api kall? */}
