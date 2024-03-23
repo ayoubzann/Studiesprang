@@ -56,7 +56,7 @@ const Header = () => {
             å hjelpe deg med å oppnå ditt fulle læringspotensiale.
           </p>
           <button className="aibutton hover:shadow-lg hover:bg-gray-700 shadow">
-            <a href="#maillist">Hold med oppdatert!</a>
+            <a href="#maillist">Hold meg oppdatert!</a>
           </button>
         <img className="blob" src="./images/new2.gif" />
         </div>
