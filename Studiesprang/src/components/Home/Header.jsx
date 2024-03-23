@@ -52,8 +52,7 @@ const Header = () => {
         <div className="text-content">
           <h1 className="title">Din digitale sensor.</h1>
           <p className="motto">
-            Drevet av avansert kunstig intelligens og nyskapende teknologi, for
-            å hjelpe deg med å oppnå ditt fulle læringspotensiale.
+            Få tilbakemelding basert på dine vurderingskriterier. Skreddersydde tilbakemeldinger for å hjelpe deg mot dine akademiske mål.
           </p>
           <button className="aibutton hover:shadow-lg hover:bg-gray-700 shadow">
             <a href="#maillist">Hold meg oppdatert!</a>
