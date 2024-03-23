@@ -5,6 +5,7 @@ import SSlideB from "../../components/AiSensor/SSlideB";
 import SSlideA from "../../components/AiSensor/SSlideA";
 import SSlideC from "../../components/AiSensor/SSlideC";
 import SSlideD from "../../components/AiSensor/SSlideD";
+import MaillistForm from "../../components/Maillist/MaillistForm";
 
 const Home = () => {
   const [criteria, setCriteria] = useState("");
@@ -57,17 +58,20 @@ const Home = () => {
       </div>
       {/* <img src="./images/wavedividersensor.svg"/> */}
         <section className="content">
-          <div className="aisensor-container fadein">
-            {/* Ha 5 forskjellige sensorkort som lagrer staten her og gjør api kall? */}
-            {currentPage === 1 && <SSlideA criteria={criteria} handleCriteriaChange={handleCriteriaChange} setCurrentPage={setCurrentPage}/>}
-            {currentPage === 2 && <SSlideB uploadedFile={uploadedFile} handleFileUpload={handleFileUpload} setCurrentPage={setCurrentPage} />}
-            {currentPage === 3 && <SSlideC setCurrentPage={setCurrentPage} />}
-            {currentPage === 4 && <SSlideD handleRestart={handleRestart} />}
-
+          <div className="fadein">
+            <MaillistForm/>
           </div>
+          
         </section>
     </div>
   );
 };
 
 export default Home;
+
+{/* <div className="aisensor-container fadein">
+            {currentPage === 1 && <SSlideA criteria={criteria} handleCriteriaChange={handleCriteriaChange} setCurrentPage={setCurrentPage}/>}
+            {currentPage === 2 && <SSlideB uploadedFile={uploadedFile} handleFileUpload={handleFileUpload} setCurrentPage={setCurrentPage} />}
+            {currentPage === 3 && <SSlideC setCurrentPage={setCurrentPage} />}
+            {currentPage === 4 && <SSlideD handleRestart={handleRestart} />}
+          </div> */}

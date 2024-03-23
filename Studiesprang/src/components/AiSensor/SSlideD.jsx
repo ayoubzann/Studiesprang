@@ -114,15 +114,8 @@ const SSlideD = ({handleRestart}) => {
                 <li>Item F</li>
               </ul>
 
-              <h3 className="text-2xl"> Annet</h3>
-              <ul className="list-disc mb-5">
-                <li>Task Alpha</li>
-                <li>Task Beta</li>
-                <li>Task Gamma</li>
-                <li>Task Delta</li>
-                <li>Task Epsilon</li>
-                <li>Task Zeta</li>
-              </ul>
+              <h3 className="text-2xl"> Estimert karakter:</h3>
+              <p className="text-5xl">A</p>
             </div>
           </TabPanel>
         </TabPanels>

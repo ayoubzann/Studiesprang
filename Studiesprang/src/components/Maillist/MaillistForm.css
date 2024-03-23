@@ -1,0 +1,30 @@
+.mailform{
+    width: 70%;
+    margin-bottom: 200px;
+}
+
+.mailform input{
+    border-radius: 0.3em;
+    
+}
+
+.mailform label{
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.mailform button{
+    background-color: rgb(31 41 55);
+    color: white;
+    margin-top: 1.5em;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding: 1.25rem;
+    border-radius: 3em;
+}
+
+.mailform h1{
+    font-size: 2em;
+    font-weight: 900;
+    margin-bottom: 1em;
+}
