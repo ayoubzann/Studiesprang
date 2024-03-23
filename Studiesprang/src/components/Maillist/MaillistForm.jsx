@@ -66,7 +66,7 @@ const MaillistForm = () => {
   };
 
   return (
-    <div className="flex justify-center">
+    <div id="maillist" className="flex justify-center">
       <form className="flex flex-col mailform" onSubmit={handleSubmitForm}>
         <h1>Hold deg oppdatert👇</h1>
         <label htmlFor="epst">E-post</label>
