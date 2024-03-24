@@ -55,7 +55,7 @@ const Header = () => {
             Få tilbakemelding basert på dine vurderingskriterier. Skreddersydde tilbakemeldinger for å hjelpe deg mot dine akademiske mål.
           </p>
           <button className="aibutton hover:shadow-lg hover:bg-gray-700 shadow">
-            <a href="#maillist">Hold meg oppdatert!</a>
+            <a href="#maillist">Sett meg på venteliste</a>
           </button>
         <img className="blob" src="./images/new2.gif" />
         </div>

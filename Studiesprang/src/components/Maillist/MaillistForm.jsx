@@ -67,8 +67,8 @@ const MaillistForm = () => {
 
   return (
     <div id="maillist" className="flex justify-center">
-      <form className="flex flex-col mailform" onSubmit={handleSubmitForm}>
-        <h1>Hold deg oppdatert👇</h1>
+      <form className="mailform" onSubmit={handleSubmitForm}>
+        <h1>Fyll ut skjema her👇</h1>
         <label htmlFor="epst">E-post</label>
         <input
           id="epst"
@@ -109,7 +109,7 @@ const MaillistForm = () => {
           <option value="hoyskole">Høyskole</option>
           <option value="annet">Annet</option>
         </select>
-        <button type="submit">Hold meg oppdatert!</button>
+        <button type="submit">Meld meg på!</button>
       </form>
     </div>
   );

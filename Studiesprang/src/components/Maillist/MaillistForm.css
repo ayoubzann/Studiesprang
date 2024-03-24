@@ -1,19 +1,30 @@
-.mailform{
+.mailform {
     width: 70%;
     margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.mailform input{
+.mailform input {
     border-radius: 0.3em;
-    
+    width: 100%;
+    margin-bottom: 1em;
+
 }
 
-.mailform label{
-    font-size: 1.3em;
+.mailform select {
+    width: 100%;
+}
+
+.mailform label {
+    font-size: 1.5em;
     font-weight: 700;
 }
 
-.mailform button{
+
+
+.mailform button {
     background-color: rgb(31 41 55);
     color: white;
     margin-top: 1.5em;
@@ -21,9 +32,10 @@
     font-weight: 500;
     padding: 1.25rem;
     border-radius: 3em;
+    width: fit-content;
 }
 
-.mailform h1{
+.mailform h1 {
     font-size: 2em;
     font-weight: 900;
     margin-bottom: 1em;
