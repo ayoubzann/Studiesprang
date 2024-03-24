@@ -103,7 +103,6 @@ const MaillistForm = () => {
 
         <label htmlFor="edulev">Du går på...</label>
         <select id="edulev" value={edulev} onChange={handleEdulevChange}>
-          <option selected disabled>Velg et alternativ</option>
           <option value="vgs">Videregående</option>
           <option value="uni">Universitet</option>
           <option value="hoyskole">Høyskole</option>
