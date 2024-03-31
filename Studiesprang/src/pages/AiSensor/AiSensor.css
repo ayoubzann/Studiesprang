@@ -1,26 +1,39 @@
-.aisensor-header > h2{
-    width: 55vw;
-    font-weight: 600;
-}
+.fadein {
+    opacity: 0;
+    transform: translateY(1em);
+    transition: opacity 2.5s, transform 2.5s;
+  }
 
-
-.floating {
-    animation: bounce 2s infinite;
-}
-
-ul{
+  .aisensor-container{
+    min-height: 100vh;
+    height: fit-content;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-}
+    background-color: #f9f9f9;
+    border-radius: 1em;
+    padding: 1em;
+    width: 100%;
+  }
 
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(-25%);
-        animation-timing-function: cubic-bezier(0.8,0,1,1);
+  .animation-started {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  @keyframes fadeInAndFly {
+    0% {
+      opacity: 0;
+      transform: translateY(-1em);
     }
-    50% {
-        transform: none;
-        animation-timing-function: cubic-bezier(0,0,0.2,1);
+  
+    10% {
+      opacity: 0;
     }
-}
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  

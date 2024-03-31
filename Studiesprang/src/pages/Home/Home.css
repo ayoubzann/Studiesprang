@@ -3,6 +3,16 @@
     transform: translateY(1em);
     transition: opacity 2.5s, transform 2.5s;
   }
+  .aisensor-container{
+    min-height: 100vh;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 1em;
+    padding: 1em;
+  }
   
   .animation-started {
     opacity: 1;

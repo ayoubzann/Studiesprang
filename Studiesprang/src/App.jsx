@@ -7,6 +7,9 @@ import Studieteknikker from "./pages/Studieteknikker/Studieteknikker";
 import { SignedOut } from "@clerk/clerk-react";
 import { SignedIn } from "@clerk/clerk-react";
 import React from "react";
+import PrivacyPolicy from "./pages/Policies/PrivacyPolicy";
+import SSlideD from "./components/AiSensor/SSlideD";
+import Feedbacktesting from "./pages/Feedbacktesting";
 
 function App() {
   return (
@@ -19,6 +22,7 @@ function App() {
               <SignedOut>
                 <Routes>
                   <Route path="/" element={<Home />} />
+                  <Route path="/sslide4" element={<Feedbacktesting />} />
                 </Routes>
               </SignedOut>
               <SignedIn>
@@ -28,8 +32,10 @@ function App() {
                     path="/studieteknikker"
                     element={<Studieteknikker />}
                   />
+                  <Route path="/sslide4" element={<Feedbacktesting />} />
                   <Route path="/aisensor" element={<AiSensor />} />
                   <Route path="/login" element={<Login />} />
+                  <Route path="/personvern" element={<PrivacyPolicy />} />
                 </Routes>
               </SignedIn>
             </React.Fragment>

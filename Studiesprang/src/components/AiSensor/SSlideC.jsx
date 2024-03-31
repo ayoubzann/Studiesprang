@@ -9,13 +9,10 @@ const SSlideC = ({setCurrentPage}) => {
   }
   return (
     <div className="loadingscreen flex flex-col items-center">
-      <CircularProgress
-        thickness="6px"
-        size="200px"
-        isIndeterminate
-        color="blue.300"
-      />
-      <h2 className="animate-pulse text-xl">AI jobber med saken...</h2>
+      <img className="loading" src="./images/processing.gif" />
+      <h2 className="animate-pulse text-3xl font-extrabold">AI jobber med saken...</h2>
+      <br/>
+      <br/>
       <button onClick={handleNextPage}>Neste side</button>
     </div>
   );

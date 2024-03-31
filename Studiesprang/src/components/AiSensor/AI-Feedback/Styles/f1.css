@@ -1,0 +1,41 @@
+.feedbackone{
+    margin-top: 1em;
+    width: 90%;
+    font-size: 1.2em;
+    font-weight: 400;
+    background-color: white;
+    border-radius: 1em;
+  
+}
+
+.mellomoverskrift {
+    font-weight: 600;
+    font-size: 1.4em;
+    margin-bottom: 0.3em;
+}
+
+.tittel{
+    font-size: 2em;
+    font-weight: 700;;
+}
+
+.boxholder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxholder-contents{
+    width: 100%;
+    border-radius: 1em;
+    line-height: 1.6em;
+    padding: 2em;
+    font-size: 1.2em;
+}
+
+.resp{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 0.6em;
+}
