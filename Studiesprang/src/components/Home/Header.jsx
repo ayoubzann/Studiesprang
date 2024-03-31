@@ -1,12 +1,12 @@
 import "./Header.css";
 import {
   SignInButton,
-  SignUpButton,
   SignedIn,
   SignedOut,
   UserButton,
 } from "@clerk/clerk-react";
 import { VscSignIn } from "react-icons/vsc";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   // useEffect(() => {
@@ -30,10 +30,10 @@ const Header = () => {
   //   };
   // }, []);
   return (
-    <div>
+    <div className="aisensorpage">
       <div className="header">
         <div className="top-bar">
-          <img className="logo" src="./images/newlogo.svg" />
+         <Link to="/"> <img className="logo" src="./images/newlogo.svg" /></Link>
           <div className="userbtn">
             <SignedIn>
               <UserButton />
@@ -53,10 +53,10 @@ const Header = () => {
           <h1 className="title">Din digitale sensor.</h1>
           <p className="motto">
             Få tilbakemelding basert på dine vurderingskriterier. Skreddersydde tilbakemeldinger for å hjelpe deg mot dine akademiske mål.
-          </p>
+          </p><Link to="/aisensor">
           <button className="aibutton hover:shadow-lg hover:bg-gray-700 shadow">
-            <a href="#maillist">Sett meg på venteliste</a>
-          </button>
+            <Link  to="/aisensor">Til AI-Sensoren</Link>
+          </button></Link>
         <img className="blob" src="./images/new2.gif" />
         </div>
       </div>

@@ -1,4 +1,10 @@
 .loadingscreen{
-    margin-bottom: 250px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.loading{
+    width: 66%;
 }

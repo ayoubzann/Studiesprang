@@ -1,0 +1,35 @@
+.feedbackthree{
+    width: 90%;
+    font-size: 1.2em;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 1em;
+}
+
+.tittel{
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.sitatboks{
+    width: 66%;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+
+.feedbackitem{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.eval{
+    font-size: 1.2em;
+    width: 70%;
+}

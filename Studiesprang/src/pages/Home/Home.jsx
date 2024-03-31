@@ -1,16 +1,9 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import "./Home.css";
 import Header from "../../components/Home/Header";
-import SSlideB from "../../components/AiSensor/SSlideB";
-import SSlideA from "../../components/AiSensor/SSlideA";
-import SSlideC from "../../components/AiSensor/SSlideC";
-import SSlideD from "../../components/AiSensor/SSlideD";
-import MaillistForm from "../../components/Maillist/MaillistForm";
 
 const Home = () => {
-  const [criteria, setCriteria] = useState("");
-  const [currentPage, setCurrentPage] = useState(1);
-  const [uploadedFile, setUploadedFile] = useState(null);
+
 
 
   useEffect(() => {
@@ -34,23 +27,6 @@ const Home = () => {
     };
   }, []);
 
-  const handleCriteriaChange = (event) => {
-    event.preventDefault();
-    setCriteria(event.target.value);
-  };
-
-  const handleFileUpload = (event) => {
-    event.preventDefault();
-    setUploadedFile(event.target.files[0])
-  }
-
-  const handleRestart = () => {
-    setCriteria("");
-    setUploadedFile(null);
-    setCurrentPage(1);
-  }
-
-
   return (
     <div>
       <div className="head fadein">
@@ -59,19 +35,10 @@ const Home = () => {
       {/* <img src="./images/wavedividersensor.svg"/> */}
         <section className="content">
           <div className="fadein">
-            <MaillistForm/>
           </div>
-          
         </section>
     </div>
   );
 };
 
 export default Home;
-
-{/* <div className="aisensor-container fadein">
-            {currentPage === 1 && <SSlideA criteria={criteria} handleCriteriaChange={handleCriteriaChange} setCurrentPage={setCurrentPage}/>}
-            {currentPage === 2 && <SSlideB uploadedFile={uploadedFile} handleFileUpload={handleFileUpload} setCurrentPage={setCurrentPage} />}
-            {currentPage === 3 && <SSlideC setCurrentPage={setCurrentPage} />}
-            {currentPage === 4 && <SSlideD handleRestart={handleRestart} />}
-          </div> */}

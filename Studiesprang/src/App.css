@@ -8,5 +8,6 @@
 }
 
 .content-container {
-  max-width: 800px;
+  width: 100vw;
+  max-width: 1000px;
 }

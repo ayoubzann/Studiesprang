@@ -1,9 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { SignIn, SignedOut } from "@clerk/clerk-react";
 import { SignedIn } from "@clerk/clerk-react";
 import "./styles/SensorcardA.css";
 
-const SSlideA = ( {criteria, handleCriteriaChange, setCurrentPage}) => {
+const SSlideA = ({ criteria, handleCriteriaChange, setCurrentPage }) => {
+  useEffect(() => {
+    document.body.classList.add("slideIn"); // Add slide-in animation when component mounts
+    return () => {
+      document.body.classList.remove("slideIn");
+    };
+  }, []);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -26,15 +32,23 @@ const SSlideA = ( {criteria, handleCriteriaChange, setCurrentPage}) => {
             <label htmlFor="criteria" className="formlabel">
               Vurderingskriterier
             </label>
-            <p className="formdesc">
-              Her legger du inn dine vurderingskriterier til oppgavens innhold.
-              Merk at AI-sensoren ikke tester tekstformat - altså linjeavstand,
-              font, skriftstørrelse o.l.
+            <p className="m-12 text-xl">
+              Legg inn dine vurderingskriterier her.<br/> Dersom du ikke har noen kriterier, kan du gå videre.<br />
+              <strong>OBS! </strong> AI-Sensoren vurderer kun innhold, ikke
+              formkrav.
             </p>
-            <textarea id="criteria" value={criteria} onChange={handleCriteriaChange} />
+            <textarea
+              id="criteria"
+              value={criteria}
+              onChange={handleCriteriaChange}
+            />
             <br />
             <br />
-            <button type="submit">Neste side</button>
+            <button className="nextpage" type="submit">
+              <p className="nextpage hover:shadow-lg hover:bg-gray-700 shadow">
+                Neste side
+              </p>
+            </button>
           </form>
         </div>
       </SignedIn>
