@@ -1,19 +1,19 @@
-import React from "react";
-import { CircularProgress } from "@chakra-ui/react";
-import "./styles/SensorcardC.css"
+import { helix } from 'ldrs';
+import "./styles/SensorcardC.css";
 
-const SSlideC = ({setCurrentPage}) => {
-  const handleNextPage = (event) => {
-    event.preventDefault();
-    setCurrentPage(4);
-  }
+const SSlideC = () => {
+  helix.register()
+
   return (
     <div className="loadingscreen flex flex-col items-center">
-      <img className="loading" src="./images/processing.gif" />
-      <h2 className="animate-pulse text-3xl font-extrabold">AI jobber med saken...</h2>
+      <l-helix
+  size="250"
+  speed="20" 
+  color="#271180" 
+></l-helix>
+      <h2 className="loadingtext animate-pulse">AI jobber på <span className='italic'>sprang</span> for deg, <br/> vennligst vent...</h2>
       <br/>
       <br/>
-      <button onClick={handleNextPage}>Neste side</button>
     </div>
   );
 };

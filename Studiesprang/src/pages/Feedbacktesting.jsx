@@ -1,11 +1,14 @@
+import { useState } from "react";
 import Feedback1 from "../components/AiSensor/AI-Feedback/Feedback1";
 import Feedback2 from "../components/AiSensor/AI-Feedback/Feedback2";
 import Feedback3 from "../components/AiSensor/AI-Feedback/Feedback3";
 
 const Feedbacktesting = () => {
+const [currentPage, setCurrentPage] = useState(1);  
   return (
     <div>
       <Feedback1
+      setCurrentPage={setCurrentPage}
         apiRes1={[
           {
             mellomoverskrift: "Mangel på vitenskapelig grunnlag",
@@ -30,6 +33,7 @@ const Feedbacktesting = () => {
         ]}
       />
       <Feedback2
+      setCurrentPage={setCurrentPage}
         apiRes2={[
           {
             sitat: "The early bird catches the worm.",
@@ -37,7 +41,7 @@ const Feedbacktesting = () => {
           },
           {
             sitat: "To boldly go where no one has gone before.",
-            rettelse: "To boldly go where no one has gone before.",
+            rettelse: "To boldly go whasdnoiadoiasiodioasdioasoidjnioasndnsaiondioansodnioasndionasidonasiondioasnere no one has gone before.",
           },
           {
             sitat: "Houston, we have a problem.",
@@ -46,6 +50,7 @@ const Feedbacktesting = () => {
         ]}
       />
       <Feedback3
+      setCurrentPage={setCurrentPage}
         apiRes3={[
           {
             sitat: "To be, or not to be, that is the question.",

@@ -6,14 +6,12 @@
 
   .aisensor-container{
     min-height: 100vh;
-    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f9f9f9;
+    background-color: white;
     border-radius: 1em;
     padding: 1em;
-    width: 100%;
   }
 
   .animation-started {

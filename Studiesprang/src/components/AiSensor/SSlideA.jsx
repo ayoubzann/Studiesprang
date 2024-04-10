@@ -32,7 +32,7 @@ const SSlideA = ({ criteria, handleCriteriaChange, setCurrentPage }) => {
             <label htmlFor="criteria" className="formlabel">
               Vurderingskriterier
             </label>
-            <p className="m-12 text-xl">
+            <p className="description">
               Legg inn dine vurderingskriterier her.<br/> Dersom du ikke har noen kriterier, kan du gå videre.<br />
               <strong>OBS! </strong> AI-Sensoren vurderer kun innhold, ikke
               formkrav.

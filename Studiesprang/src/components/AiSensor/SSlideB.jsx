@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./styles/SensorcardB.css";
 
-const SSlideB = ({ handleFileUpload, setCurrentPage,  uploadedFile }) => {
-const [errorMessage, setErrorMessage] = useState(false);
-
+const SSlideB = ({ handleFileUpload, setCurrentPage, uploadedFile }) => {
+  const [errorMessage, setErrorMessage] = useState(false);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -11,7 +10,7 @@ const [errorMessage, setErrorMessage] = useState(false);
     setErrorMessage(false);
     setCurrentPage(3);
   };
-  
+
   const handleUpload = (event) => {
     event.preventDefault();
     if (event.target.files[0] === null) {
@@ -25,14 +24,21 @@ const [errorMessage, setErrorMessage] = useState(false);
 
   return (
     <div id="aisensor" className="aisensor">
+      <h2 className="sensorcard-title">Filopplasting</h2>
       <form className="formupload" onSubmit={handleSubmit}>
         <label htmlFor="pdffil" className="formlabel"></label>
-        <p className="formdesc">
-          Last opp din <strong>PDF-fil</strong> eller{" "}
-          <strong>Word-dokument</strong> her.
-          <br />
-          Merk at teksten ikke kan overskride 10.000 ord per sensorretting.
-        </p>
+        <div className="formdesc">
+          <p>
+            Last opp din <strong>PDF-fil</strong> eller
+            <strong>Word-dokument</strong> her.
+            <br />
+            Merk at teksten ikke kan overskride 10.000 ord per sensorretting.
+          </p>
+          <p>
+            <strong>NB!</strong> AI-Sensoren fokuserer først og fremst på
+            konstruktiv kritikk.
+          </p>
+        </div>
         {errorMessage && (
           <p className="text-red-500 text-xl font-extrabold m-5">
             Vennligst last opp en fil.

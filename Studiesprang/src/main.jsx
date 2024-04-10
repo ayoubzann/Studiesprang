@@ -5,6 +5,7 @@ import "./index.css";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import { ClerkProvider } from "@clerk/clerk-react";
 import { BrowserRouter } from "react-router-dom";
+import { NextUIProvider } from "@nextui-org/react";
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
@@ -26,9 +27,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <ClerkProvider publishableKey={PUBLISHABLE_KEY}>
       <BrowserRouter>
+      <NextUIProvider>
         <ChakraProvider theme={theme}>
           <App />
         </ChakraProvider>
+      </NextUIProvider>
       </BrowserRouter>
     </ClerkProvider>
   </React.StrictMode>

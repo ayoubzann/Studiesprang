@@ -1,9 +1,12 @@
+// eslint-disable-next-line no-undef
+const { nextui } = require("@nextui-org/react");
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
     'node_modules/flowbite-react/lib/esm/**/*.js',
+    "node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
     colors: {
@@ -14,8 +17,8 @@ export default {
       'accent': '#433bff',
      },     
     extend: {},
+    
   },
-  plugins: [
-    require('flowbite/plugin'),
-  ],
+  darkMode: "class",
+plugins: [nextui()],
 }
