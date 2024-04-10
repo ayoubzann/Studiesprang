@@ -5,6 +5,8 @@ import SSlideB from "../../components/AiSensor/SSlideB";
 import SSlideC from "../../components/AiSensor/SSlideC";
 import SSlideD from "../../components/AiSensor/SSlideD";
 import { preprocessAndParseJSON } from "../../utils.jsx";
+import { useClerk } from '@clerk/clerk-react';
+import { useNavigate } from 'react-router-dom';
 
 const AiSensor = () => {
   const [criteria, setCriteria] = useState("");
@@ -15,6 +17,19 @@ const AiSensor = () => {
   const [apiRes3, setApiRes3] = useState(null);
   const [apiCalled, setApiCalled] = useState(false); // State to track if API call has been made
   const baseUrl = "https://studiesprangapi.azurewebsites.net/";
+  const {user} = useClerk();
+  const navigate = useNavigate();
+
+
+if(user) console.log(user);
+
+useEffect(()=>{
+  if(user.publicMetadata.role !== "admin")
+  {
+    navigate("/");
+  }
+},[user])
+
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -116,16 +131,9 @@ const AiSensor = () => {
     }
   }, [uploadedFile, apiCalled]);
 
-  const handleLogInfo = async (event) => {
-    event.preventDefault();
-    console.log(await apiRes1);
-    console.log(await apiRes2);
-    console.log(await apiRes3);
-  };
 
   return (
     <div className="completecontainer">
-      <button onClick={handleLogInfo}>LOG INFO</button>
       <header className="head fadein"></header>
       <section className="aisensor-container fadein flex flex-col">
         {currentPage === 1 && (

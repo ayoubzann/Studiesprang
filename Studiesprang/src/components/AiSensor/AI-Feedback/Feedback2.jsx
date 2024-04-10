@@ -1,9 +1,18 @@
 import PropTypes from "prop-types";
 import "./Styles/f2.css";
 import { Accordion, AccordionItem } from "@nextui-org/react";
-/* eslint-disable react/prop-types */
+import { useState, useEffect } from "react";
 
 const Feedback2 = ({ apiRes2, setCurrentPage }) => {
+  const [grammar, setGrammar] = useState(true);
+
+  useEffect(() => {
+    // Check if there are no grammatical errors when component mounts
+    if (apiRes2[0].rettelse === "Ingen grammatiske feil funnet.") {
+      setGrammar(false);
+    }
+  }, [apiRes2]); // Only re-run this effect if apiRes2 changes
+
   // Ensure apiRes2 is an object before trying to iterate over its properties
   if (typeof apiRes2 !== "object" || apiRes2 === null) {
     console.error("apiRes2 is not an object:", apiRes2);
@@ -23,21 +32,31 @@ const Feedback2 = ({ apiRes2, setCurrentPage }) => {
     <div className="feedbacktwo shadow-lg">
       <h1 className="tittel">Grammatikk</h1>
       <br />
-      <p className="text-2xl m-4">
-        AI-sensoren fant følgende grammatiske feil i din tekst:
-      </p>
-        {Object.keys(apiRes2).map((key) => {
+      {!grammar ? (
+        <p className="text-2xl m-4">
+          AI-Sensoren fant ingen grammatiske feil! Godt jobbet.
+        </p>
+      ) : (
+        <p className="text-2xl m-4">
+          AI-Sensoren fant følgende grammatiske feil i din tekst:
+        </p>
+      )}
+
+      {/* Conditionally render accordions if grammar is true */}
+      {grammar &&
+        Object.keys(apiRes2).map((key) => {
           const obj = apiRes2[key];
           return (
             <Accordion key={key} itemClasses={itemClasses} className="accordion">
-              <AccordionItem className="accs flex flex-col text-center"
-              variant="splitted"
-              title={
-                <div>
-                <p className="text-center">SITAT</p>
-                <p className="text-2xl text-center"> "{obj.sitat}"</p>
-                </div>
-              }
+              <AccordionItem
+                className="accs flex flex-col text-center"
+                variant="splitted"
+                title={
+                  <div>
+                    <p className="text-center">SITAT</p>
+                    <p className="text-2xl text-center"> "{obj.sitat}"</p>
+                  </div>
+                }
               >
                 <p className="text-xl mb-2">Foreslått rettelse:</p>
                 <p className="text-2xl">"{obj.rettelse}"</p>

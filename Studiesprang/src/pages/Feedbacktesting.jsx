@@ -4,11 +4,11 @@ import Feedback2 from "../components/AiSensor/AI-Feedback/Feedback2";
 import Feedback3 from "../components/AiSensor/AI-Feedback/Feedback3";
 
 const Feedbacktesting = () => {
-const [currentPage, setCurrentPage] = useState(1);  
+  const [currentPage, setCurrentPage] = useState(1);
   return (
     <div>
       <Feedback1
-      setCurrentPage={setCurrentPage}
+        setCurrentPage={setCurrentPage}
         apiRes1={[
           {
             mellomoverskrift: "Mangel på vitenskapelig grunnlag",
@@ -33,7 +33,7 @@ const [currentPage, setCurrentPage] = useState(1);
         ]}
       />
       <Feedback2
-      setCurrentPage={setCurrentPage}
+        setCurrentPage={setCurrentPage}
         apiRes2={[
           {
             sitat: "The early bird catches the worm.",
@@ -41,7 +41,8 @@ const [currentPage, setCurrentPage] = useState(1);
           },
           {
             sitat: "To boldly go where no one has gone before.",
-            rettelse: "To boldly go whasdnoiadoiasiodioasdioasoidjnioasndnsaiondioansodnioasndionasidonasiondioasnere no one has gone before.",
+            rettelse:
+              "To boldly go whasdnoiadoiasiodioasdioasoidjnioasndnsaiondioansodnioasndionasidonasiondioasnere no one has gone before.",
           },
           {
             sitat: "Houston, we have a problem.",
@@ -50,7 +51,7 @@ const [currentPage, setCurrentPage] = useState(1);
         ]}
       />
       <Feedback3
-      setCurrentPage={setCurrentPage}
+        setCurrentPage={setCurrentPage}
         apiRes3={[
           {
             sitat: "To be, or not to be, that is the question.",

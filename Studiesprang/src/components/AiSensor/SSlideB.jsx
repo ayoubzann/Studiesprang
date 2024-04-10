@@ -5,9 +5,14 @@ const SSlideB = ({ handleFileUpload, setCurrentPage, uploadedFile }) => {
   const [errorMessage, setErrorMessage] = useState(false);
 
   const handleSubmit = (event) => {
+    if (!uploadedFile) {
+      event.preventDefault();
+      setErrorMessage(true); // Set error message to true
+      return;
+    }
     event.preventDefault();
-    console.log(uploadedFile);
     setErrorMessage(false);
+    console.log(uploadedFile);
     setCurrentPage(3);
   };
 
@@ -32,7 +37,7 @@ const SSlideB = ({ handleFileUpload, setCurrentPage, uploadedFile }) => {
             Last opp din <strong>PDF-fil</strong> eller
             <strong>Word-dokument</strong> her.
             <br />
-            Merk at teksten ikke kan overskride 10.000 ord per sensorretting.
+            Merk at teksten ikke kan overskride 3000 ord per sensorretting.
           </p>
           <p>
             <strong>NB!</strong> AI-Sensoren fokuserer først og fremst på
