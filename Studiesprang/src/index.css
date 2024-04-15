@@ -7,6 +7,11 @@ html {
 }
 
 :root {
+  background-image: url("/images/blurrybg.svg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   color-scheme: unset;
   line-height: 1.5;
@@ -16,6 +21,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: flex;
+  overscroll-behavior: none;
   justify-content: center;
 }
 
