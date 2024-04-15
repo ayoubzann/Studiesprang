@@ -10,7 +10,7 @@
   }
   
   .blob {
-    filter: blur(40px);
+    filter: blur(30px);
     height: 440px;
     min-width: 312px;
   width: 32vw;
