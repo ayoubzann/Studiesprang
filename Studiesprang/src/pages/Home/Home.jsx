@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 import "./Home.css";
 import Header from "../../components/Home/Header";
+import { Card } from "@chakra-ui/react";
+import { CardBody } from "@chakra-ui/react";
+import { CardHeader } from "@chakra-ui/react";
 
 const Home = () => {
-
-
-
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -32,11 +32,40 @@ const Home = () => {
       <div className="head fadein">
         <Header />
       </div>
-      {/* <img src="./images/wavedividersensor.svg"/> */}
-        <section className="content">
-          <div className="fadein">
-          </div>
-        </section>
+      <section className="content flex justify-center">
+        <div className="fadein contentcards ">
+          <Card className="fp-ic"  variant="filled" backgroundColor>
+            <CardHeader>
+              <strong>
+                <h2 className="text-xl">Læringsvennlig AI</h2>
+              </strong>
+            </CardHeader>
+            <CardBody>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laboriosam iusto eius odio aliquam corporis tempora dolorem fugiat ratione suscipit, vel obcaecati consectetur veritatis ab esse! Perspiciatis dolore saepe nobis laboriosam ut. Quisquam odit libero iusto atque. Illum quod impedit maxime nemo similique mollitia, incidunt unde animi, quisquam, cupiditate nam!</p>
+            </CardBody>
+          </Card>
+          <Card className="fp-ic" variant="filled" backgroundColor>
+            <CardHeader>
+              <strong>
+                <h2 className="text-xl">Læringsvennlig AI</h2>
+              </strong>
+            </CardHeader>
+            <CardBody>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laboriosam iusto eius odio aliquam corporis tempora dolorem fugiat ratione suscipit, vel obcaecati consectetur veritatis ab esse! Perspiciatis dolore saepe nobis laboriosam ut. Quisquam odit libero iusto atque. Illum quod impedit maxime nemo similique mollitia, incidunt unde animi, quisquam, cupiditate nam!</p>
+            </CardBody>
+          </Card>
+          <Card className="fp-ic"  variant="filled" backgroundColor>
+            <CardHeader>
+              <strong>
+                <h2 className="text-xl">Læringsvennlig AI</h2>
+              </strong>
+            </CardHeader>
+            <CardBody>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis laboriosam iusto eius odio aliquam corporis tempora dolorem fugiat ratione suscipit, vel obcaecati consectetur veritatis ab esse! Perspiciatis dolore saepe nobis laboriosam ut. Quisquam odit libero iusto atque. Illum quod impedit maxime nemo similique mollitia, incidunt unde animi, quisquam, cupiditate nam!</p>
+            </CardBody>
+          </Card>
+        </div>
+      </section>
     </div>
   );
 };
