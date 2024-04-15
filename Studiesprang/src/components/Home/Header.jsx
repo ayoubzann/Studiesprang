@@ -36,7 +36,7 @@ const Header = () => {
          <Link to="/"> <img className="logo" src="./images/newlogo.svg" /></Link>
           <div className="userbtn">
             <SignedIn>
-              <UserButton />
+              <UserButton/>
             </SignedIn>
             <SignedOut>
               <div>
@@ -57,7 +57,7 @@ const Header = () => {
           <button className="aibutton hover:shadow-lg hover:bg-gray-700 shadow">
             <Link  to="/aisensor">Til AI-Sensoren</Link>
           </button></Link>
-        <img className="blob" src="./images/new2.gif" />
+        <img className="blob" src="./images/blobtransparent.gif" />
         </div>
       </div>
     </div>
