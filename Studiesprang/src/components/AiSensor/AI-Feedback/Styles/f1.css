@@ -9,10 +9,18 @@
     align-items: center;
 }
 
+.generellbesk{
+font-size: 1.1em;
+font-style: italic;
+width: 60%;
+margin-top: 1em;
+}
+
 .mellomoverskrift {
     font-weight: 600;
-    font-size: 1.4em;
+    font-size: 2em;
     margin-bottom: 0.3em;
+    text-align: center;
 }
 
 .accs{
@@ -20,6 +28,13 @@
     border-radius: 1.2em;
 }
 
+.respons{
+    font-size: 1.8em;
+    line-height: 1.2em;
+    padding: 1em;
+    text-align: center;
+    font-weight: 400;
+}
 
 .tittel{
     font-size: 2em;
@@ -38,4 +53,16 @@
     width: 70%;
     margin: auto;
     margin-bottom: 0.6em;
+}
+
+@media (max-width: 780px){
+
+    .mellomoverskrift{
+        font-size: 1.5em;
+    }
+
+    .respons{
+        font-size: 1.3em;
+        padding: 5px;
+    }
 }
