@@ -22,8 +22,7 @@ const Feedback1 = ({ apiRes1, setCurrentPage }) => {
       <br />
 
       <h3 className="tittel"> Generell vurdering</h3>
-      <p className="text-2xl italic w-4/6 mt-2">
-        {" "}
+      <p className="generellbesk ">
         Denne vurderingen tar hovedsakelig utgangspunkt i vurderingskriteriene
         du sendte inn, samt generelle krav til en god tekst.
       </p>
@@ -35,12 +34,12 @@ const Feedback1 = ({ apiRes1, setCurrentPage }) => {
               className="accs flex flex-col text-center"
               variant="splitted"
               title={
-                <p className="text-3xl text-center font-semibold">
+                <p className=" mellomoverskrift">
                   {obj.mellomoverskrift}
                 </p>
               }
             >
-              <p className="text-justify text-2xl p-8">{obj.respons}</p>
+              <p className="respons">{obj.respons}</p>
             </AccordionItem>
           </Accordion>
         );
