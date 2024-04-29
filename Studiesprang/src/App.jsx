@@ -8,11 +8,13 @@ import { SignedIn, SignedOut } from "@clerk/clerk-react";
 import React from "react";
 import PrivacyPolicy from "./pages/Policies/PrivacyPolicy";
 import Feedbacktesting from "./pages/Feedbacktesting";
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
 
   return (
     <div className="content-container">
+      <Navbar/>
       <Routes>
         <Route
           path="/*"

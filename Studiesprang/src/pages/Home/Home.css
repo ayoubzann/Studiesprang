@@ -1,50 +1,105 @@
-  .fadein {
+.fadein {
+  opacity: 0;
+  transform: translateY(1em);
+  transition: opacity 2.5s, transform 2.5s;
+}
+
+.aisensor-container {
+  min-height: 100vh;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+.content {
+  width: 80%;
+  margin: auto;
+}
+
+.contentcards {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  width: 90%;
+  margin-bottom: 5em;
+}
+
+.informationsection h2 {
+  text-align: left;
+  font-size: 3em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+.informationsection {
+  background-color: rgba(168, 155, 218, 0.265);
+  padding: 4em 0;
+  width: 100vw;
+  text-align: left;
+  margin-bottom: 10em;
+}
+
+.isdata {
+  width: 50%;
+  margin: auto;
+}
+
+.informationsection .isdata {
+  width: 50%;
+  margin: auto;
+}
+
+.aihandshake {
+  float: left;
+  margin-right: 20px;
+  width: 33%;
+  height: auto;
+}
+
+.text-container {
+  overflow: hidden;
+  font-size: 1em;
+}
+
+.fp-ic {
+  width: 33%;
+  padding: 0.6em;
+  background-color: rgba(168, 155, 218, 0.265);
+}
+
+.aisensor123{
+  text-align: left;
+  font-size: 3em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+.animation-started {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes fadeInAndFly {
+  0% {
     opacity: 0;
-    transform: translateY(1em);
-    transition: opacity 2.5s, transform 2.5s;
-  }
-  .aisensor-container{
-    min-height: 100vh;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f9f9f9;
-    border-radius: 1em;
-    padding: 1em;
-  }
-  
-  .contentcards{
-    display: flex;
-    justify-content: center;
-    width: 70%;
-    gap: 3em;
+    transform: translateY(-1em);
   }
 
-  .fp-ic{
-    max-width: 33%;
-    padding: 0.6em;
-    background-color: rgba(212, 0, 255, 0.149);
+  10% {
+    opacity: 0;
   }
 
-  .animation-started {
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
-  @keyframes fadeInAndFly {
-    0% {
-      opacity: 0;
-      transform: translateY(-1em);
-    }
+}
+
+@media (max-width: 780px)
+{
   
-    10% {
-      opacity: 0;
-    }
-  
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  
+}

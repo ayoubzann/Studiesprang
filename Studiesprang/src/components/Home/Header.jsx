@@ -32,23 +32,6 @@ const Header = () => {
   return (
     <div className="aisensorpage">
       <div className="header">
-        <div className="top-bar">
-         <Link to="/"> <img className="logo" src="./images/newlogo.svg" /></Link>
-          <div className="userbtn">
-            <SignedIn>
-              <UserButton/>
-            </SignedIn>
-            <SignedOut>
-              <div>
-                <SignInButton mode="modal">
-                  <button>
-                    <VscSignIn size={35} />
-                  </button>
-                </SignInButton>{" "}
-              </div>
-            </SignedOut>
-          </div>
-        </div>
         <div className="text-content">
           <h1 className="title">Din digitale sensor.</h1>
           <p className="motto">
